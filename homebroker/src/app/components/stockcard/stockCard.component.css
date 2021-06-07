@@ -1,0 +1,100 @@
+
+
+.card-container{
+  width:100%;
+  height:50%;
+  padding:0.5rem;
+  background-color: var(--secundary-color);
+  margin:1rem;
+  display:flex;
+  flex-direction:column;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 1px;
+  border-left-width: 3px;
+  border-color:var(--secundary-color);
+  border-left-color: var(--border-color);
+  justify-content:space-between;
+  align-items:baseline;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition:all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.card-container:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}
+
+.card-item-column{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items: center;
+  justify-content:center;
+  margin-bottom:auto;
+}
+.card-item-row{
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+
+}
+
+.card-container h2{
+  color:var(--text-color);
+}
+.card-container p{
+  font-weight: 700;
+  color:var(--text-color-light);
+}
+
+.monetary-value{
+  font-weight:bold;
+  font-size:1.4rem;
+  color:var(--text-color);
+  margin-bottom: 0.2rem;
+}
+.card-item-column .variation{
+  background-color:var(--positive-variation-color);
+  color:var(--variation-text-color);
+  padding:0.4rem;
+  border-radius:6px;
+  margin-left: 2.5rem;
+}
+
+.card-item-column .negative-variation{
+ background-color:var(--negative-variation-color);
+}
+
+@media screen and (max-width:768px){
+  .header{
+    justify-content:center;
+  }
+  .card-container{
+    width:100%;
+    height:83%;
+    border-bottom-color: var(--border-color);
+    border-bottom-width: 3px;
+  border-left-width: 1px;
+  border-left-color: var(--secundary-color);
+  margin-left:-1.5%;
+  margin-right: 3%;
+  }
+  .monetary-value{
+    font-weight:bold;
+    font-size:2.8rem;
+    color:var(--text-color);
+    margin-bottom: 0.1rem;
+    padding-bottom: 0;
+  }
+
+  .card-item-column .variation{
+    font-weight:bold;
+    font-size:2.0rem;
+    color:var(--variation-text-color);
+    margin-left: 25%;
+  }
+}

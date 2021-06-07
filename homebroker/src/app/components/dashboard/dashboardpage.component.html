@@ -1,0 +1,14 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!--Se estivessemos usando uma table poderiamos colocar nos atributos tr e td {{item.atributo}}-->
+<!--mas como estamos usando card vamos usar INput-->
+<div class="container">
+  <app-stockCard *ngFor="let stock of stocks" [stock]="stock"></app-stockCard>
+
+</div>

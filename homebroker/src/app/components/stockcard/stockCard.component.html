@@ -1,0 +1,21 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- na aba variation o que fizemos é o seguite caso a variation <0 trocamos a classe por outra-->
+<div class="card-container" >
+  <div class="card-item-row">
+    <h2>{{stock.name}}</h2>
+    <p>{{stock.date}}</p>
+  </div>
+  <div class="card-item-column">
+    <span class="monetary-value">{{stock.price | currency:"BRL"}}</span>
+    <span class="variation" [class.negative-variation]="stock.variation<0">{{variation}}</span>
+  </div>
+
+
+</div>
